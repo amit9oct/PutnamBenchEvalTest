@@ -10,13 +10,13 @@ require mathlib from git "https://github.com/leanprover-community/mathlib4" @ "v
 
 @[default_target]
 lean_lib «putnam_competition_test» where
-  globs := #[.submodules `src_with_solns]
+  globs := #[.submodules `imports, .submodules `src_with_solns]
 
 lean_lib «putnam_competition_sorries» where
-  globs := #[.submodules `src_with_sorries]
+  globs := #[.submodules `imports, .submodules `src_with_sorries]
 
 lean_lib «putnam_competition_solution» where
-  globs := #[.submodules `src_with_sorries_replaced]
+  globs := #[.submodules `imports, .submodules `src_with_sorries_replaced]
 
 lean_exe «check_docstrings» where
   root := `check_docstrings

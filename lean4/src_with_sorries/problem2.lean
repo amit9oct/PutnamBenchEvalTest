@@ -1,4 +1,4 @@
-import src.allimports
+import imports.allimports
 open BigOperators Real Nat Topology
 
 /-- Prove that the sum of the first n odd numbers equals n². -/
