@@ -31,7 +31,7 @@ jobs:
     - name: Build problems with sorries
       working-directory: lean4
       run: |
-        lake build putnam_competition_sorries > original_build.log
+        lake build putnam_competition_sorries
 
     - name: Save olean cache
       working-directory: lean4
