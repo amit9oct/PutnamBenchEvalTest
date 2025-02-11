@@ -53,7 +53,7 @@ def main():
         problem_id = problem.split(lean_soln_dump_folder_name)[-1].split(".lean")[0].strip("/")
         unsolved_problems_set.add(problem_id)
     problems_attempted = set(insertion_summary["problems_attempted_list"])
-    assert unsolved_problems_set.issubset(problems_attempted), f"Something wrong with insertion of proofs. Some problems have their solutions leaked. {unsolved_problems_set - problems_attempted}"
+    assert unsolved_problems_set.issubset(all_problems_mentioned), f"Something wrong with insertion of proofs. Some problems have their solutions leaked. {unsolved_problems_set - all_problems_mentioned}"
     
     # Count the problems for which the build failed
     rexp = rf"✖([\s\S]*?){lean_soln_dump_folder_name}\.(\w+)"
