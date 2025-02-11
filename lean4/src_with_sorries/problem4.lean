@@ -1,4 +1,4 @@
-import src.allimports
+import imports.allimports
 open BigOperators Real Nat Topology
 
 /--
