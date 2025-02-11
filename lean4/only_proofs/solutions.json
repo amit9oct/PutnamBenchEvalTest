@@ -2,7 +2,7 @@
     {
         "id": "problem1",
         "solution": "0",
-        "proof": "by\r\n-- subtract the two equations\r\n-- (x + \u03C0) - (y - \u03C0\/2) = 2y - 5x  \u27F9  x + \u03C0 - y + \u03C0\/2 = 2y - 5x\r\nhave h_y : y = (x + \u03C0) \/ 2 := by\r\n  rw [h\u2081]\r\n  ring\r\n-- substitute y in the second equation\r\nrw [h_y] at h\u2082\r\nclear h_y\r\nring_nf at h\u2082\r\nsimp at h\u2082\r\ncases h\u2082\r\nrename_i impossible\r\nlinarith\r\nrename_i x_eq_0\r\nsimp [x_eq_0]"
+        "proof": "by\r\n-- subtract the two equations\r\n-- (x + \u03C0) - (y - \u03C0\/2) = 2y - 5x  \u27F9  x + \u03C0 - y + \u03C0\/2 = 2y - 5x\r\nhave h_y : y = (x + \u03C0) \/ 2 := by sorry\r\n  ring\r\n-- substitute y in the second equation\r\nrw [h_y] at h\u2082\r\nclear h_y\r\nring_nf at h\u2082\r\nsimp at h\u2082\r\ncases h\u2082\r\nrename_i impossible\r\nlinarith\r\nrename_i x_eq_0\r\nsimp [x_eq_0]"
     },
     {
         "id": "problem2",
@@ -16,7 +16,7 @@
     },
     {
         "id": "problem4",
-        "solution": null,
+        "solution": "x",
         "proof": "by\r\nintros D E h_triangle\r\nhave h\u2081 : D = (1\/2) \u2022 A + (1\/2) \u2022 B := by simp [D]\r\nhave h\u2082 : E = (1\/2) \u2022 A + (1\/2) \u2022 C := by simp [E]\r\nrw [h\u2081, h\u2082]\r\nsimp"
     },
     {
